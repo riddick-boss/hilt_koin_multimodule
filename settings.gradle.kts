@@ -23,3 +23,4 @@ rootProject.name = "Hilt Koin Multimodule"
 include(":app")
 include(":hilt")
 include(":koin")
+include(":koin-annotations")

@@ -33,5 +33,10 @@ fun StartScreen(
         ) {
             Text("Go to Koin Screen")
         }
+        ElevatedButton(
+            onClick = { navController.navigate(NavScreens.KOIN_ANNOTATIONS_SCREEN.navRoute) }
+        ) {
+            Text("Go to Koin Annotations Screen")
+        }
     }
 }

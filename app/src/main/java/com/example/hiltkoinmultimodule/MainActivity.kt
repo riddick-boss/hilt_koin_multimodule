@@ -7,9 +7,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.hilt.presentation.hiltscreen.HiltScreen
+import com.example.hilt.presentation.HiltScreen
 import com.example.hiltkoinmultimodule.ui.theme.HiltKoinMultimoduleTheme
 import com.example.koin.presentation.KoinScreen
+import com.example.koin_annotations.presentation.KoinAnnotationsScreen
 import dagger.hilt.android.AndroidEntryPoint
 import org.koin.androidx.compose.KoinAndroidContext
 
@@ -38,6 +39,9 @@ class MainActivity : ComponentActivity() {
                         }
                         composable(NavScreens.KOIN_SCREEN.navRoute) {
                             KoinScreen(navController)
+                        }
+                        composable(NavScreens.KOIN_ANNOTATIONS_SCREEN.navRoute) {
+                            KoinAnnotationsScreen(navController)
                         }
                     }
                 }
