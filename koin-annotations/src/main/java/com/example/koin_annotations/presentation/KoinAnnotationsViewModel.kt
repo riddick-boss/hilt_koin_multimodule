@@ -1,18 +1,17 @@
-package com.example.hilt.presentation.hiltscreen
+package com.example.koin_annotations.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.hilt.domain.TextRepository
-import dagger.hilt.android.lifecycle.HiltViewModel
+import com.example.koin_annotations.domain.TextRepository
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
-import javax.inject.Inject
+import org.koin.android.annotation.KoinViewModel
 
-@HiltViewModel
-class HiltViewModel @Inject constructor(
+@KoinViewModel
+class KoinAnnotationsViewModel(
     private val textRepository: TextRepository
 ) : ViewModel() {
     val textFlow: StateFlow<String> by lazy {

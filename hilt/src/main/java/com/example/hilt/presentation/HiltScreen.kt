@@ -1,4 +1,4 @@
-package com.example.hilt.presentation.hiltscreen
+package com.example.hilt.presentation
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
