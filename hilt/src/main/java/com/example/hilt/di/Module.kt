@@ -19,6 +19,7 @@ abstract class Module {
     companion object {
         @Provides
         @Singleton
+        /*@Named("foo")*/
         fun provideApiClient(): ApiClient = ApiClient(initialDelayMillis = 4000L)
     }
 }

@@ -6,7 +6,7 @@ import com.example.hilt.domain.TextResponse
 import javax.inject.Inject
 
 class LocalTextRepository @Inject constructor(
-    private val apiClient: ApiClient,
+    /*@Named("foo")*/ private val apiClient: ApiClient,
     private val mapper: Mapper
 ) : TextRepository {
     override suspend fun fetchText(): TextResponse {
