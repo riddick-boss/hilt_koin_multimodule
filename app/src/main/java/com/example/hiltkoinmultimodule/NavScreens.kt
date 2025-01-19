@@ -4,5 +4,6 @@ enum class NavScreens(
     val navRoute: String
 ) {
     START_SCREEN("startScreen"),
-    HILT_SCREEN("hiltScreen")
+    HILT_SCREEN("hiltScreen"),
+    KOIN_SCREEN("koinScreen")
 }

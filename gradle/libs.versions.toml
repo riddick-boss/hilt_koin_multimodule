@@ -14,6 +14,7 @@ hilt = "2.52"
 ksp = "1.9.25-1.0.20"
 hiltCompose = "1.2.0"
 navigation = "2.8.5"
+koinBom = "4.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -36,6 +37,9 @@ material = { group = "com.google.android.material", name = "material", version.r
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 hilt-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltCompose" }
+koin-bom = { group = "io.insert-koin", name = "koin-bom", version.ref = "koinBom" }
+koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose" }
+koin-test = { group = "io.insert-koin", name = "koin-test-junit4" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
