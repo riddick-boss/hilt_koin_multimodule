@@ -1,0 +1,1 @@
+A quick demonstration of Dependency Injection (DI) in Android using Hilt, Koin, and Koin Annotations, organized in a multimodule structure. Each module shows the same functionality implemented with a different DI framework.
